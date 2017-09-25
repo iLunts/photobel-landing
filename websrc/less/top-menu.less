@@ -1,0 +1,59 @@
+// out: ../css/top-menu.css, compress: true
+@import 'variables.less';
+// Name:            top-menu
+//
+// ----------------------------------------------------
+// Block '.top-menu'
+// ----------------------------------------------------
+.top-menu {
+    position: relative;
+    background: #fff;
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+    
+    // Element '.top-menu .top-menu__logo'
+    & &__logo{
+        font-size: 2rem;
+    }
+    
+    // Element '.top-menu .top-menu__menu'
+    & &__menu{
+        // padding: 20px 0;
+    }
+    
+    // Element '.top-menu .top-menu__item'
+    & &__item{
+        display: inline-block;
+        margin-right: -4px;
+        
+        // Element '.top-menu .top-menu__item + .top-menu__item'
+        & + .top-menu__item{
+            margin-left: 15px;
+        }
+    }
+    
+    // Element '.top-menu .top-menu__item'
+    & &__link{
+        font-size: 15px;
+        font-weight: 300;
+        color: #666;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 22px;
+        text-decoration: none;
+    }
+    
+    // Element '.top-menu .top-menu__btn'
+    & &__btn{
+        font-size: 15px;
+        line-height: 22px;
+        text-decoration: none;
+    }
+}
