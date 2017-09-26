@@ -6,6 +6,7 @@
 // Block '.btn'
 // ----------------------------------------------------
 .btn {
+    display: inline-block;
     position: relative;
     padding: 4px 15px;
     border: none;
@@ -19,6 +20,13 @@
     &&--blue-light{
         background: #e7f6fe;
         color: #14abf4;
+    }
+
+    // Modificator '.btn.btn--green'
+    &&--green{
+        background: @color-green;
+        color: #fff;
+        border-color: @color-green;
     }
 
     // -----------------------------------------
