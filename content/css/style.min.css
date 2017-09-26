@@ -117,9 +117,17 @@
   z-index: 1;
 }
 
+.device-macbook .device-shadow {
+  height: 4px;
+  border-radius: 100%;
+  width: 90%;
+  filter: blur(3px);
+  background: #333;
+  margin: 0 auto;
+}
+
 .device-macbook .device-content {
   background-color: #fff;
-  background-image: url("../src/img/bg-07.jpg");
   background-position: center center;
   background-size: cover;
   border: 2px solid #121212;
