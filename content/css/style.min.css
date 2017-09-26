@@ -140,6 +140,16 @@
   z-index: 1;
 }
 
+.device-macbook .device-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.device-macbook .device-image img {
+  opacity: 0;
+}
+
 .device-macbook .device-shadow {
   height: 4px;
   border-radius: 100%;
