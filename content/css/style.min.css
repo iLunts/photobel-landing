@@ -49,6 +49,10 @@
   border-color: #6cbb37;
 }
 
+.btn.btn--green.btn--push {
+  box-shadow: 0 5px .2px #508c27;
+}
+
 
 .flex.flex--c {
   justify-content: center;
