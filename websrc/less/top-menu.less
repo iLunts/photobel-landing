@@ -6,8 +6,16 @@
 // Block '.top-menu'
 // ----------------------------------------------------
 .top-menu {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: #fff;
+    padding: 15px;
+
+    box-shadow: 0px 6px 60px 0px rgba(38, 51, 64, 0.05);
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+    z-index: 1000;
     
     // -----------------------------------------
     // All modificators
@@ -21,12 +29,18 @@
     // Element '.top-menu .top-menu__logo'
     & &__logo{
         font-size: 2rem;
+        float: left;
+    }
+    
+    // Element '.top-menu .top-menu__list'
+    & &__list{
+        float: right;
     }
     
     // Element '.top-menu .top-menu__menu'
-    & &__menu{
+    // & &__menu{
         // padding: 20px 0;
-    }
+    // }
     
     // Element '.top-menu .top-menu__item'
     & &__item{
