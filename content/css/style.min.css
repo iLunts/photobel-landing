@@ -24,26 +24,49 @@
 }
 
 .block.block--blue-gradien {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5f3fc+12,e5f3fc+88,ffffff+100 */
   background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffffff 0%, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 0%, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, #ffffff 0, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
+  background: linear-gradient(to bottom, #ffffff 0, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
-  /* IE6-9 */
+}
+
+.block.block--main {
+  padding: 100px 0;
+  background-image: url("/content/img/block/blue-wave.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .btn {
   display: inline-block;
   position: relative;
-  padding: 4px 15px;
+  padding: 5px 15px;
   border: none;
   border-radius: 4px;
   outline: none;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.btn.btn--sm {
+  padding: 10px 20px;
+}
+
+.btn.btn--md {
+  padding: 15px 30px;
+}
+
+.btn.btn--lg {
+  padding: 20px 40px;
+}
+
+.btn.btn--xlg {
+  padding: 30px 60px;
+}
+
+.btn.btn--xxlg {
+  padding: 40px 80px;
 }
 
 .btn.btn--blue-light {
@@ -121,9 +144,9 @@
   height: 4px;
   border-radius: 100%;
   width: 90%;
-  filter: blur(3px);
   background: #333;
   margin: 0 auto;
+  filter: blur(3px);
 }
 
 .device-macbook .device-content {
@@ -1323,7 +1346,7 @@ img {
   max-width: 100%;
 }
 .t--muted {
-  color: #999;
+  color: #a4a4a3 !important;
 }
 
 .t--r {
@@ -1386,7 +1409,7 @@ img {
 }
 
 .t--h6 {
-  font-size: 0.9rem;
+  font-size: .9rem;
   line-height: 1.2rem;
 }
 
@@ -1404,15 +1427,28 @@ h6 {
   width: 100%;
   background: #fff;
   padding: 15px 25px;
-  box-shadow: 0px 6px 60px 0px rgba(38, 51, 64, 0.05);
-  -webkit-transition: box-shadow 0.3s ease-in-out;
-  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 6px 60px 0 rgba(38,51,64,0.05);
+  -webkit-transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
   z-index: 1000;
 }
 
 .top-menu .top-menu__logo {
   font-size: 2rem;
   float: left;
+}
+
+.top-menu .top-menu__phone {
+  float: left;
+  color: #b5b8bb;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 20px;
+  margin-left: 10px;
+  border-left: 2px solid #e9eaec;
+  vertical-align: middle;
+  text-decoration: none;
+  font-weight: 100;
 }
 
 .top-menu .top-menu__list {
@@ -1424,7 +1460,7 @@ h6 {
   margin-right: -4px;
 }
 
-.top-menu .top-menu__item + .top-menu__item {
+.top-menu .top-menu__item+.top-menu__item {
   margin-left: 15px;
 }
 
@@ -1602,6 +1638,10 @@ h6 {
   margin: 40px 0 !important;
 }
 
+.m--v-md {
+  margin: 30px 0 !important;
+}
+
 .m--v-sm {
   margin: 10px 0 !important;
 }
@@ -1644,7 +1684,7 @@ blockquote {
   border-left: 2px solid #2196f3;
   margin: 15px 0;
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: .9rem;
   line-height: 1.3rem;
 }
 

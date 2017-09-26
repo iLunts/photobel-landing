@@ -8,16 +8,42 @@
 .btn {
     display: inline-block;
     position: relative;
-    padding: 4px 15px;
+    padding: 5px 15px;
     border: none;
     border-radius: 4px;
     outline: none;
     text-decoration: none;
+    cursor: pointer;
     
     // -----------------------------------------
     // All modificators
     // -----------------------------------------
     
+    // Modificator '.btn.btn--sm'
+    &&--sm{
+        padding: (@btn-padding / 2) @btn-padding;
+    }
+    
+    // Modificator '.btn.btn--md'
+    &&--md{
+        padding: (@btn-padding-md / 2) @btn-padding-md;
+    }
+    
+    // Modificator '.btn.btn--lg'
+    &&--lg{
+        padding: (@btn-padding-lg / 2) @btn-padding-lg;
+    }
+    
+    // Modificator '.btn.btn--xlg'
+    &&--xlg{
+        padding: (@btn-padding-xlg / 2) @btn-padding-xlg;
+    }
+    
+    // Modificator '.btn.btn--xxlg'
+    &&--xxlg{
+        padding: (@btn-padding-xxlg / 2) @btn-padding-xxlg;
+    }
+
     // Modificator '.btn.btn--blue-light'
     &&--blue-light{
         background: #e7f6fe;
