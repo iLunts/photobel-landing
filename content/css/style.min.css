@@ -24,11 +24,17 @@
 }
 
 .block.block--blue-gradien {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5f3fc+12,e5f3fc+88,ffffff+100 */
   background: #ffffff;
-  background: -moz-linear-gradient(top, #ffffff 0, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
-  background: -webkit-linear-gradient(top, #ffffff 0, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
-  background: linear-gradient(to bottom, #ffffff 0, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+  /* IE6-9 */
 }
 
 .block.block--main {
@@ -80,7 +86,7 @@
 }
 
 .btn.btn--green.btn--push {
-  box-shadow: 0 5px .2px #508c27;
+  box-shadow: 0 5px 0.2px #508c27;
 }
 
 .btn.btn--push {
@@ -258,7 +264,7 @@
 
 .device-macbook.device-spacegray .device-home {
   background: #515456;
-  box-shadow: inset 0 -2px 6px 0 #000;
+  box-shadow: inset 0 -2px 6px 0 #000000;
 }
 
 
@@ -1354,6 +1360,91 @@ img {
   width: 100%;
   max-width: 100%;
 }
+.slider {
+  position: relative;
+}
+
+.slider .slider__item {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.slider .slider__link {
+  display: block;
+  padding: 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 300ms;
+}
+
+.slider .slider__link:hover {
+  background: #fff;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+}
+
+.slider .slider__title {
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.slider .slider__subtitle {
+  display: block;
+  font-size: .8rem;
+  text-transform: uppercase;
+  color: #b9c2cb;
+  margin-top: 10px;
+}
+
+.slider .slider__img {
+  height: 100px;
+}
+
+.slider .slider__dot {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.slider .slider__dot-item {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #d7effb;
+  border: 6px solid #fff;
+}
+
+.slider .slider__dot-item+.slider__dot-item {
+  margin-left: 6px;
+}
+
+.slider .slider__dot-item.active {
+  background: #38b1ea;
+}
+
+.slider .slider__nav-item {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50px;
+  background-color: #d7effb;
+  color: #38b1ea;
+  text-decoration: none;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.slider .slider__nav-item.slider__nav-item--prev {
+  left: -50px;
+}
+
+.slider .slider__nav-item.slider__nav-item--next {
+  right: -50px;
+}
 .t--muted {
   color: #a4a4a3 !important;
 }
@@ -1394,22 +1485,22 @@ img {
 
 .t--h1 {
   font-size: 3rem;
-  line-height: 4rem;
+  line-height: 5rem;
 }
 
 .t--h2 {
   font-size: 2.2rem;
-  line-height: 3rem;
+  line-height: 3.5rem;
 }
 
 .t--h3 {
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 2.6rem;
 }
 
 .t--h4 {
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
 }
 
 .t--h5 {
@@ -1418,7 +1509,7 @@ img {
 }
 
 .t--h6 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.2rem;
 }
 
@@ -1436,9 +1527,9 @@ h6 {
   width: 100%;
   background: #fff;
   padding: 15px 25px;
-  box-shadow: 0 6px 60px 0 rgba(38,51,64,0.05);
-  -webkit-transition: box-shadow .3s ease-in-out;
-  transition: box-shadow .3s ease-in-out;
+  box-shadow: 0px 6px 60px 0px rgba(38, 51, 64, 0.05);
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
   z-index: 1000;
 }
 
@@ -1469,7 +1560,7 @@ h6 {
   margin-right: -4px;
 }
 
-.top-menu .top-menu__item+.top-menu__item {
+.top-menu .top-menu__item + .top-menu__item {
   margin-left: 15px;
 }
 
@@ -1693,12 +1784,8 @@ blockquote {
   border-left: 2px solid #2196f3;
   margin: 15px 0;
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.3rem;
-}
-
-.clearfix {
-  display: block;
 }
 
 .clearfix:after {
