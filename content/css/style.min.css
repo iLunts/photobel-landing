@@ -1267,6 +1267,10 @@
   font-size: .75rem;
 }
 
+.icon.icon--smd {
+  font-size: 1.65rem;
+}
+
 .icon.icon--md {
   font-size: 2.25rem;
 }
