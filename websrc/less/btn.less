@@ -24,6 +24,11 @@
         padding: (@btn-padding / 2) @btn-padding;
     }
     
+    // Modificator '.btn.btn--smd'
+    &&--smd{
+        padding: (@btn-padding-smd / 2) @btn-padding-smd;
+    }
+    
     // Modificator '.btn.btn--md'
     &&--md{
         padding: (@btn-padding-md / 2) @btn-padding-md;
@@ -57,7 +62,18 @@
         border-color: @color-green;
         
         &.btn--push{
-            box-shadow: 0 5px 0.2px #508c27;
+            box-shadow: 0 5px 0.2px @color-green-dark;
+        }
+    }
+
+    // Modificator '.btn.btn--blue'
+    &&--blue{
+        background: @color-blue;
+        color: #fff;
+        border-color: @color-blue;
+        
+        &.btn--push{
+            box-shadow: 0 5px 0.2px @color-blue-dark;
         }
     }
 

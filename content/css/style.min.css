@@ -24,17 +24,11 @@
 }
 
 .block.block--blue-gradien {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5f3fc+12,e5f3fc+88,ffffff+100 */
   background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffffff 0%, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 0%, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, #ffffff 0, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
+  background: linear-gradient(to bottom, #ffffff 0, #e5f3fc 12%, #e5f3fc 88%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
-  /* IE6-9 */
 }
 
 .block.block--main {
@@ -53,6 +47,23 @@
   background-color: #263340;
   color: #fff;
 }
+
+.block .block__title {
+  font-size: 1.8rem;
+  color: #273341;
+  line-height: 3rem;
+  margin-bottom: 25px;
+}
+
+.block .block__text {
+  font-size: .8rem;
+  color: #60707f;
+  line-height: 1rem;
+}
+
+.block .block__icon {
+  margin-top: 15px;
+}
 .btn {
   display: inline-block;
   position: relative;
@@ -66,6 +77,10 @@
 
 .btn.btn--sm {
   padding: 10px 20px;
+}
+
+.btn.btn--smd {
+  padding: 11.5px 23px;
 }
 
 .btn.btn--md {
@@ -96,7 +111,17 @@
 }
 
 .btn.btn--green.btn--push {
-  box-shadow: 0 5px 0.2px #508c27;
+  box-shadow: 0 5px .2px #508c27;
+}
+
+.btn.btn--blue {
+  background: #2196f3;
+  color: #fff;
+  border-color: #2196f3;
+}
+
+.btn.btn--blue.btn--push {
+  box-shadow: 0 5px .2px #1976d2;
 }
 
 .btn.btn--push {
@@ -277,7 +302,6 @@
   box-shadow: inset 0 -2px 6px 0 #000000;
 }
 
-
 .flex.flex--c {
   justify-content: center;
   align-items: center;
@@ -359,10 +383,6 @@
   flex: none;
   margin: 0;
   float: left;
-}
-
-.grid > * > :last-child {
-  margin-bottom: 0;
 }
 
 /* Horizontal */
@@ -1233,6 +1253,161 @@
     left: -90%;
   }
 }
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.icon+.icon {
+  margin-left: 10px;
+}
+
+.icon.icon--sm {
+  font-size: .75rem;
+}
+
+.icon.icon--md {
+  font-size: 2.25rem;
+}
+
+.icon.icon--lg {
+  font-size: 3rem;
+}
+
+.icon.icon--xlg {
+  font-size: 4.5rem;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?yft6no");
+  src: url("../fonts/icomoon.eot?yft6no#iefix") format('embedded-opentype'), url("../fonts/icomoon.ttf?yft6no") format('truetype'), url("../fonts/icomoon.woff?yft6no") format('woff'), url("../fonts/icomoon.svg?yft6no#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-funds:before {
+  content: "\e900";
+}
+
+.icon-payment-method:before {
+  content: "\e901";
+}
+
+.icon-briefcase:before {
+  content: "\e902";
+}
+
+.icon-networking:before {
+  content: "\e903";
+}
+
+.icon-laptop:before {
+  content: "\e904";
+}
+
+.icon-padlock_one:before {
+  content: "\e905";
+}
+
+.icon-safebox:before {
+  content: "\e906";
+}
+
+.icon-map:before {
+  content: "\e907";
+}
+
+.icon-cursor:before {
+  content: "\e908";
+}
+
+.icon-layers:before {
+  content: "\e909";
+}
+
+.icon-id-card:before {
+  content: "\e90a";
+}
+
+.icon-money:before {
+  content: "\e90b";
+}
+
+.icon-shield:before {
+  content: "\e90c";
+}
+
+.icon-calendar:before {
+  content: "\e90d";
+}
+
+.icon-chat:before {
+  content: "\e90e";
+}
+
+.icon-image:before {
+  content: "\e90f";
+}
+
+.icon-padlock:before {
+  content: "\e910";
+}
+
+.icon-credit-card-trans:before {
+  content: "\e911";
+}
+
+.icon-wallet:before {
+  content: "\e912";
+}
+
+.icon-credit-card:before {
+  content: "\e913";
+}
+
+.icon-plastic-card:before {
+  content: "\e914";
+}
+
+.icon-laurel-left:before {
+  content: "\e915";
+}
+
+.icon-laurel-right:before {
+  content: "\e916";
+}
+
+.icon-award-symbol:before {
+  content: "\e917";
+}
+
+.icon-star:before {
+  content: "\e918";
+}
+
+.icon-back:before {
+  content: "\e919";
+}
+
+.icon-next:before {
+  content: "\e91a";
+}
 .list.list--v .list__item {
   line-height: 1.3rem;
 }
@@ -1462,6 +1637,7 @@ img {
   text-decoration: none;
   text-align: center;
   margin-top: -30px;
+  font-size: .8rem;
 }
 
 .slider .slider__nav-item.slider__nav-item--prev {
@@ -1471,8 +1647,30 @@ img {
 .slider .slider__nav-item.slider__nav-item--next {
   right: -50px;
 }
+.star {
+  position: relative;
+}
+
+.star .star__above {
+  margin: 30px 0;
+}
+
+.star .star__above-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 30px;
+  line-height: 1.5rem;
+}
 .t--muted {
   color: #a4a4a3 !important;
+}
+
+.t--blue {
+  color: #2196f3 !important;
+}
+
+.t--yellow {
+  color: #f8be3a !important;
 }
 
 .t--r {
@@ -1543,7 +1741,7 @@ img {
 }
 
 .t--h6 {
-  font-size: 0.9rem;
+  font-size: .9rem;
   line-height: 1.2rem;
 }
 

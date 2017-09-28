@@ -1,0 +1,46 @@
+// out: ../css/icon.css, compress: true
+@import 'variables.less';
+// Name:            icon
+//
+// ----------------------------------------------------
+// Block '.icon'
+// ----------------------------------------------------
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: @icon-font-size;
+
+    // ELement '.icon + .icon'
+    & + &{
+        margin-left: 10px;
+    }
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+    // Modificator '.icon.icon--sm'
+    &&--sm{
+        font-size: @icon-font-size-sm;
+    }
+
+    // Modificator '.icon.icon--md'
+    &&--md{
+        font-size: @icon-font-size-md;
+    }
+
+    // Modificator '.icon.icon--lg'
+    &&--lg{
+        font-size: @icon-font-size-lg;
+    }
+    
+    // Modificator '.icon.icon--xlg'
+    &&--xlg{
+        font-size: @icon-font-size-xlg;
+    }
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+}
