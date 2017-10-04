@@ -1,0 +1,39 @@
+// out: ../css/badge.css, compress: true
+@import 'variables.less';
+// Name:            badge
+//
+// ----------------------------------------------------
+// Block '.badge'
+// ----------------------------------------------------
+.badge {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: @badge-width;
+    height: @badge-width;
+    line-height: @badge-width - 2;
+    border-radius: @badge-width;
+    background: #eee;
+    color: #ddd;
+    font-size: .8rem;
+    text-align: center;
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+    // Modificator '.badge.badge--green'
+    &&--green{
+        background-color: @badge-background-green;
+        color: @badge-color-green;
+    }
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.badge .badge__icon'
+    & &__icon{
+        font-size: .7rem;
+    }
+}
