@@ -172,10 +172,15 @@
 
 .device-content {
   overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 .device-content.device-content--left {
   background-position: left !important;
+}
+
+.device-content.device-content--contain {
+  background-size: contain !important;
 }
 
 .device-macbook {
